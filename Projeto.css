@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+   
+}
+
+
+.container-left {
+    display: inline-block;
+    width: 60%;
+   padding-left: 136px;
+   margin-top: 20%;
+}
+
+.container-right {
+    display: inline-block;
+    background-color: rgba(93, 93, 125, 0.16);
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+}
+
+img{
+    position: relative ;
+    top: 25%;
+    right: 130px;
+}
+
+h1 {
+    width: 368px;
+    font-size: 70px;
+    font-style: normal;
+    line-height: 80px; /* 114.286% */
+}
+
+p{
+    width: 540px;
+    font-size: 28px;
+    font-style: normal;
+    line-height: 48px; /* 171.429% */
+    opacity: 0.6;
+    margin:15px 0;
+}
+
+button{
+    width: 269px;
+    height: 62px;
+    background-color: #9499EA;;
+    box-shadow: (0px 10px 24px rgba(148, 153, 234, 0.10));
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: .8;
+}
+
+button:active{
+    opacity: .5;
+}
+
+a{
+    font-weight: 400;
+    line-height: normal;
+    color: #5D5D7D;
+    font-size: 28px;
+    margin-right: 41px;
+    cursor: pointer;
+}
+
+a:nth-child(2) {
+    opacity: .4;
+}
+
+a:hover{
+    opacity: 0.4;
+}
+
+a:active{
+    opacity: .8;
+}
+
+header{
+    margin: 24px 0 0 57px;
+}
+
+@media screen and (max-width: 900px){
+    .container-left {
+        width: 100%;
+        height: 50%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-right{
+        display: block;
+        height: auto;
+        width: 100%;
+        position: static;
+        padding: 40px;
+    }
+
+    img{
+        position: static;
+    }
+
+    .header-section{
+        display: none;
+    }
+
+    h1{
+        width: auto;
+        line-height: 52px; /* 144.444% */
+        font-size: 36px;
+        text-align: center;
+        margin: 58px 50px 0 50px;
+    }
+
+    p{
+        margin: 15px 40px;
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 24px; /* 171.429% */
+    }
+
+    button{
+        margin: 0 auto;
+        display: block;
+    }
+
+    img{
+        max-width: 90%;
+    }
+
+    @media screen and (max-width: 375px){
+        .container-left{
+            height: 70%;
+        }
+    }
+
+
+}
